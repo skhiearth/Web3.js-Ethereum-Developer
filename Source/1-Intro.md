@@ -11,16 +11,20 @@ smart contract is a JSON-RPC request to a node in the blockchain network.
 
 # Setting up
 In the terminal, type `node`, and then in the node terminal do the following:
+
 var Web3 = require('web3')
 var url = 'https://mainnet.infura.io/v3/74e7531425ca4e4bb400cb891852d190' // Get URL from Infura
 var web3 = new Web3(url)
 
 # Interacting with accounts using Web3
 var address = '0x53d284357ec70cE289D6D64134DfAc8E511c8a3D' // Find an account using Etherscan
+
 web3.eth.getBalance(address, (err, bal) => {
   balance = bal
 })
+
 balance // Prints out the value of Wei owned by the account
+
 web3.utils.fromWei(balance, 'ether') // Run this to get the Ether balance
 
 # Creating an account using Web3
