@@ -11,9 +11,9 @@ low level ABI calls over RPC for you.
 This allows you to interact with smart contracts as if they were JavaScript objects.
 
 The method to create a new contract is:
-
-> new web3.eth.Contract(jsonInterface[, address][, options])
-
+```
+new web3.eth.Contract(jsonInterface[, address][, options])
+```
 Here, *jsonInterface* is the interface for the contract to instantiate. ABI is
 essentially a JSON file that shows what a Smart contract can do. We also need
 the location of the smart contract, it's address. Everything in Ethereum has an
