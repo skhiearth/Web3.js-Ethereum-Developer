@@ -27,10 +27,10 @@ web3.utils.fromWei(balance, 'ether') // Run this to get the Ether balance
 web3.eth.accounts.create()
 
 # We can also connect to a local private Ethereum network for development purposes.
-var url = // Get URL from Ganache
+var url = 'HTTP://127.0.0.1:7545' // Get URL from Ganache
 var web3 = new Web3(url)
 
-var address = '' // Use any address on Ganache
+var address = '0x3f53c658065C5918fA2edBe39F22806D30b2c57a' // Use any address on Ganache
 web3.eth.getBalance(address, (err, wei) => {
   balance = web3.utils.fromWei(wei, 'ether')
 })
