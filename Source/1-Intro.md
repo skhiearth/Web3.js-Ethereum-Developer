@@ -22,7 +22,8 @@ In the terminal, type `node`, and then in the node terminal do the following:
 > var address = '0x53d284357ec70cE289D6D64134DfAc8E511c8a3D' // Find an account using Etherscan
 
 > web3.eth.getBalance(address, (err, bal) => { balance = bal})
-balance // Prints out the value of Wei owned by the account
+
+> balance // Prints out the value of Wei owned by the account
 
 > web3.utils.fromWei(balance, 'ether') // Run this to get the Ether balance
 
