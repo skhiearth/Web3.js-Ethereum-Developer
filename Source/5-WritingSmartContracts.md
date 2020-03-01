@@ -261,11 +261,11 @@ web3.eth.getTransactionCount(account1, (err, txCount) => {
     gasLimit: web3.utils.toHex(800000),
     gasPrice: web3.utils.toHex(web3.utils.toWei('10', 'gwei')),
     to: CONTRACT_ADDRESS, // Smart Contract's address
-    data: dapptokenContract.methods.transfer(account2, 1).encodeABI()
+    data: dapptokenContract.methods.transfer(account2, 100).encodeABI()
     // Here we are using the `transfer` function in the Smart Contract to transfer tokens.
     // The data is the hex-encoded representation of the function name
     // and the arguments which the function requires in order to send the transaction.
-    // Here, we are sending 1 token to `account2` using the Smart Contract.
+    // Here, we are sending 100 tokens to `account2` using the Smart Contract.
   }
 
   // Signing the transaction
